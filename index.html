@@ -10,9 +10,11 @@
     <h1>This is desktop site.</h1>
 <script>
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  if (isMobile) {
+
+  if (isMobile && !window.location.href.includes("abkux.github.io/mobile/")) {
     window.location.href = "https://abkux.github.io/mobile/";
   }
 </script>
+
   </body>
 </html>
